@@ -1,8 +1,8 @@
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
 
 export default async function ProjectsPage (){
-    // const response = await fetch('http://localhost:3001/repos',{ cache: 'no-store' }) // save cache
-    const response = await fetch('http://localhost:3001/repos', { next: { revalidate: 3 } }) // check khoảng thời gian bao lâu là sẽ update lại dữ liệu
+    const response = await fetch('http://localhost:3001/repos',{ cache: 'no-store' }) // save cache
+    // const response = await fetch('http://localhost:3001/repos', { next: { revalidate: 3 } }) // check khoảng thời gian bao lâu là sẽ update lại dữ liệu
     const repos = await response.json()
     return(
         <div className="p-20">
