@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="p-20 space-y-4">
+      <div className="space-y-4">
           Hello, {names}
           <div className="flex justify-between mb-6">
             <div className="p-2">Flex item</div>

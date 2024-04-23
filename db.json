@@ -4,13 +4,13 @@
         "id": 1,
         "title": "json-server",
         "description": "The project",
-        "stargazers_count": 300
+        "stargazers_count": 200
       },
       {
         "id": 2,
         "title": "vue-interactive-dashboard",
         "description": "A Vue.js project for creating dynamic and interactive dashboards with real-time data visualization.",
-        "stargazers_count": 15
+        "stargazers_count": 250
       },
       {
         "id": 3,
