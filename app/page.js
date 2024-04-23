@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Card from "@/components/card";
 
-export default function Home() {
+export default function Home({searchParams}) {
   
   // const [label, setLabel] = useState('Show');
   const [isVisible, setIsVisible] = useState(true);
@@ -22,6 +22,8 @@ export default function Home() {
   
 
   const cards = isVisible && names.map((name, index) => <Card key={index}> {name} </Card>)
+  console.log(searchParams)
+  if (searchParams.error) throw new Error("hello")
 
   return (
     <>
