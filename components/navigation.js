@@ -16,6 +16,9 @@ export default function Navigation () {
                 <li>
                     <Link href="/photos" className={styles.link}>Photos</Link>
                 </li>
+                <li>
+                    <Link href="/blog" className={styles.link}>Blog</Link>
+                </li>
             </ul>
         </nav>
     )
