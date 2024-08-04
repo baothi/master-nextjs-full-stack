@@ -1,7 +1,7 @@
 import Card from "@/components/card"
 
 export default async function ProjectList() {
-    const response = await fetch('http://localhost:3001/repos',
+    const response = await fetch('https://api.github.com/users/piotr-jura-udemy/repos',
     // { cache: 'no-store' }
     ) // save cache
     // const response = await fetch('http://localhost:3001/repos', { next: { revalidate: 3 } }) // check khoảng thời gian bao lâu là sẽ update lại dữ liệu
@@ -13,7 +13,7 @@ export default async function ProjectList() {
                 <li key={repo.id} className="mb-4">
                     <Card className="font-mono h-full">
                         <div className="flex justify-between items-center mb-4">
-                        <div className="font-semibold">{repo.title}</div>
+                        <div className="font-semibold">{repo.name}</div>
                         <div>🌟{repo.stargazers_count}</div>
                         </div>
 
